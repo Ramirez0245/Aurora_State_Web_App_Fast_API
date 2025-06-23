@@ -3,7 +3,7 @@ name: Deploy to Ubuntu Server
 on:
   push:
     branches:
-      - THET-92-Deploy-Branch  # You can change this to any branch you want
+      - main  # You can change this to any branch you want
 
 jobs:
   deploy:
