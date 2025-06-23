@@ -29,6 +29,6 @@ jobs:
       # Step 4: SSH into server and run the script that is already on the server
       - name: SSH into server and run the script
         run: |
-          ssh -i ~/.ssh/id_rsa root@${{ secrets.SERVER_HOST }} "bash ~/app/current_deploy/current_app/TrafficHelper/merge.sh"
+          ssh -i ~/.ssh/id_rsa root@${{ secrets.SERVER_HOST }} "bash ~/app/current_deploy/current_app/merge.sh"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
